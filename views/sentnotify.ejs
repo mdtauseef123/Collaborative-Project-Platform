@@ -1,0 +1,16 @@
+<%- include("partials/header"); -%>
+    <div class="card border shadow collaborate-form-section">
+        <h1>Collaborating</h1>
+        <h2><%= project_title %></h2>
+        <p><%= project_content %> <a href="/projects/<%= project_title %>">Read More</a></p>
+        <form action="/sentnotify" method="post">
+            <div class="form-group">
+                <label>Your Addon</label>
+                <textarea class="form-control" rows="7" name="addon_content" autocomplete="off"></textarea>
+            </div>
+            <input class="form-control" value="<%= project_title %>" name="project_title" autocomplete="off" type="hidden">
+            <input class="form-control" value="<%= project_content %>" name="project_content" autocomplete="off" type="hidden">
+            <button type="submit" class="btn btn-primary mt-2">Send The Request</button>
+        </form>
+    </div>
+<%- include("partials/footer"); -%>

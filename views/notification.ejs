@@ -1,0 +1,25 @@
+<%- include("partials/header"); -%>
+    <div class="notification-section">
+        <% projects.forEach(function(project){ %>
+            <h1>Title:- <%= project.project_title %></h1>
+            <h2>Original Author:- <%= project.original_author %></h2>
+            <h3>Collaborated User:- <%= project.collaboarated_user %></h3>
+            <p>Addon Content:- <%= project.addon_content %></p>
+            <form action="/accept" method="post">
+                <input value="<%= project.original_author %>" name="original_author" type="hidden">
+                <input value="<%= project.project_title %>" name="project_title" type="hidden">
+                <input value="<%= project.collaboarated_user %>" name="collaboarated_user" type="hidden">
+                <input value="<%= project.addon_content %>" name="addon_content" type="hidden">
+                <button type="submit" class="btn btn-success">Accept</button>
+            </form>
+            <br>
+            <form action="/reject" method="post">
+                <input value="<%= project.original_author %>" name="original_author" type="hidden">
+                <input value="<%= project.project_title %>" name="project_title" type="hidden">
+                <input value="<%= project.collaboarated_user %>" name="collaboarated_user" type="hidden">
+                <button type="submit" class="btn btn-danger">Reject</button>
+            </form>
+            <hr>
+        <% }); %>
+    </div>
+<%- include("partials/footer"); -%>

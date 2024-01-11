@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body{
+  font-family: 'Comfortaa', sans-serif;
+  margin-top: 25px;
+}
+
+.login-card{
+  margin-left: 37%;
+}
+
+.register-card{
+  margin-left: 35%;
+}
+
+.hello{
+  display: inline;
+}
+
+.card{
+  display: inline-block;
+}
+
+.brand{
+  font-size: 30px;
+}
+
+#title{
+  text-align: left;
+}
+
+/* Containers */
+.container-fluid{
+    padding: 3% 15% 7%;
+}
+
+/* Navigation Bar */
+.navbar{
+  color: black;
+  margin-bottom: 3.5rem;
+  margin-left: 7%;
+  margin-right: 3%;
+}
+
+.navbar-brand{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-link{
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+  font-size: 1.2rem;
+  font-weight: light;
+}
+
+
+/*Heading Section*/
+.big-heading{
+  font-size: 4.0rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+
+/*Title Images*/
+.title-image-col{
+  position: relative;
+}
+.title-image{
+  width: 60%;
+  position: absolute;
+  right: 12%;
+}
+
+
+/* Footer Section */
+#footer{
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.footer-icon{
+  margin-left: 1%;
+  margin-right: 1%;
+  color: grey;
+}
+
+.footer-icon:hover{
+  color: black;
+}
+
+.footer-description{
+  padding-top: 1%;
+}
+
+.temp-email{
+  height: 50px;
+  width: 310px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* CTA Section */
+#cta{
+  margin-top: 20%;
+  text-align: center;
+  padding: 7% 2%;
+}
+
+.cta-headers{
+  color: black;
+  width: 75%;
+  margin: 0 auto 0 auto;
+}
+
+.colored-section{
+  background-color: grey;
+}
+
+.title{
+  margin-left: 7%;
+  margin-right: 3%;
+}
+
+.carousel-item{
+  padding: 7% 15%;
+}
+
+.social-link{
+  height: 50px;
+  width: 50px;
+}
+
+.testimonial-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#testimonials{
+  background-color: #EF8172;
+  color: white;
+}
+
+.testimonial-image{
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+.home-content{
+  margin-left: 7%;
+}
+
+.post-form{
+  padding: 2%;
+  width: 85%;
+  height: 60%;
+  margin-left: 7%;
+}
+
+.collaborate-section, .about-section, .notification-section, .user-project, .edit-section{
+  margin-left: 7%;
+  margin-right: 3%;
+}
+
+.each-project{
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+
+
+.collaborate-form-section{
+  padding: 2%;
+  margin-left: 7%;
+  margin-right: 3%;
+}
+
+.each-user-project{
+  margin-right: 2%;
+}
+
+.edit-section{
+  margin-left: 7%;
+  margin-right: 3%;
+  width: 85%;
+  height: 60%;
+  padding: 2%;
+}
+
+.isolate-project{
+  margin-left: 7%;
+  margin-right: 3%;
+  width: 85%;
+  height: 60%;
+  padding: 2%;
+}

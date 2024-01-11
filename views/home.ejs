@@ -1,0 +1,17 @@
+<%- include("partials/header") -%>
+    <div class="home-content">
+        <h1 class="hello">Hello <%= user_full_name %></h1>
+        <hr>
+        <h2 class="ml-2">Trending Project</h2>
+        <% projects.forEach(function(project){ %>
+            <div class="card each-project" style="width: 18rem;">
+                <img class="card-img-top" src="images/project.png" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title"><%= project.project_title %></h5>
+                <p class="card-text"><%= project.project_content.substring(0,100) %>.....</p>
+                <a href="/projects/<%= project.project_title %>" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        <% }); %>
+    </div>  
+<%- include("partials/footer"); -%>

@@ -1,0 +1,23 @@
+<%- include("partials/header"); -%>
+    <div class="edit-section">
+        <h1>Edit Your Existing Project</h1>
+        <hr size="3">
+        <% projects.forEach(function(project){ %>
+            <h2><%= project.project_title %></h2>
+            <p><%= project.project_content %> <a href="/projects/<%= project.project_title %>">Read More</a></p>
+            <form action="/edit" method="post">
+                <input class="form-control" value="<%= project.project_title %>" name="project_title" autocomplete="off" type="hidden">
+                <input class="form-control" value="<%= project.project_content %>" name="project_content" autocomplete="off" type="hidden">
+                <button type="submit" class="btn btn-primary">Edit</button>
+            </form>
+            <hr>
+        <% }); %>
+    </div>
+    <!--<form action="/colaborate" method="post">
+        <div class="form-group">
+            <label>Enter Project Name</label>
+            <input class="form-control" name="project_name" autocomplete="off">
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>-->
+<%- include("partials/footer"); -%>

@@ -1,0 +1,20 @@
+<%- include("partials/header1"); -%>
+
+  <div class="card shadow border login-card">
+    <div class="card-body">
+      <h5 class="card-title">LogIn</h5>
+      <form action="/login" method="post">
+        <label>Enter email</label>
+        <input class="form-control" name="username" autocomplete="off" type="email">
+        <label>Enter Password</label>
+        <input class="form-control" name="password" autocomplete="off" type="password">
+        <br>
+        <button type="submit" class="btn btn-primary">Log In</button>
+      </form>
+      <p>Not registered yet? <a href="/register">Create an account</a></p>
+    </div>
+  </div>
+
+
+    
+<%- include("partials/footer"); -%>

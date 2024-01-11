@@ -1,0 +1,8 @@
+<%- include("partials/header"); -%>
+    <div class="notification-section">
+        <% projects.forEach(function(project){ %>
+            <h2><%= project.message %></h2>
+            <hr>
+        <% }); %>
+    </div>
+<%- include("partials/footer"); -%>

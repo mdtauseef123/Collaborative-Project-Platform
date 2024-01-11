@@ -1,0 +1,16 @@
+<%- include("partials/header"); -%>
+    <div class="collaborate-section">
+        <h1>Let's Colaborate</h1>
+        <hr size="3">
+        <% projects.forEach(function(project){ %>
+            <h2><%= project.project_title %></h2>
+            <p><%= project.project_content %> <a href="/projects/<%= project.project_title %>">Read More</a></p>
+            <form action="/colaborate" method="post">
+                <input class="form-control" value="<%= project.project_title %>" name="project_title" autocomplete="off" type="hidden">
+                <input class="form-control" value="<%= project.project_content %>" name="project_content" autocomplete="off" type="hidden">
+                <button type="submit" class="btn btn-primary">Make a request for contribution</button>
+            </form>
+            <hr>
+        <% }); %>
+    </div>
+<%- include("partials/footer"); -%>
